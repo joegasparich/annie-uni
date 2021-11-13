@@ -1,0 +1,76 @@
+body, h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page {
+    margin: 0 8vw;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo {
+    width: 5vw;
+    height: 7.5vw;
+    margin-bottom: 3vh;
+    transform: translate(0, 0);
+    transition: transform .2s ease;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: translate(0, -2vh);
+}
+
+.images {
+    position:relative;
+    width: calc(70vh * 6.3);
+    height: 70vh;
+    align-self: baseline;
+}
+
+.overlay,
+.underlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.image {
+    height: 100%;
+}
+
+.underlay {
+    z-index: 1;
+
+    opacity: 0;
+}
+.underlay:hover {
+    opacity: 1;
+}
+
+.info {
+    margin: 14vh 17vw 18.5vh;
+    opacity: 0;
+    transform: translate(0, 5vh);
+    transition: all 0.5s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+h3 {
+    align-self: baseline;
+    margin-bottom: 4vh;
+    font-size: 3.5vh;
+}
+
+p {
+    font-size: 2.5vh;
+    line-height: 3vh;
+}
