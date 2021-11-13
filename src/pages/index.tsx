@@ -63,6 +63,7 @@ const IndexPage = () => {
             src="../images/original.jpg"
             alt="overlay"
             className="image"
+            placeholder="blurred"
             width={6805}
             height={1080}
             quality={100}
@@ -79,6 +80,7 @@ const IndexPage = () => {
             src="../images/hover.jpg"
             alt="underlay"
             className="image"
+            placeholder="blurred"
             width={6805}
             height={1080}
             quality={100}
