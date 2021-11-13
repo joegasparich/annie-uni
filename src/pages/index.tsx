@@ -31,21 +31,22 @@ const IndexPage = () => {
   const windowHeightRef = React.useRef(0);
   windowWidthRef.current = windowWidth;
   windowHeightRef.current = windowHeight;
+  const circleSize = windowWidth * 0.2;
   const [inViewRef, inView, entry] = useInView({
     threshold: 0.05,
   });
 
   const handleMouseMove: MouseEventHandler<HTMLDivElement> = e => {
-    const { height, width, top, left } = e.currentTarget.getBoundingClientRect()
+    const { height, width, top, left } = e.currentTarget.getBoundingClientRect();
 
-    const x = e.clientX - left
-    const y = e.clientY - top
+    const x = e.clientX - left - circleSize/2;
+    const y = e.clientY - top - circleSize/2;
 
-    const xPercent = Math.round((x / width) * 100)
-    const yPercent = Math.round((y / height) * 100)
+    const xPercent = (x / (width - circleSize)) * 100;
+    const yPercent = (y / (height - circleSize)) * 100;
 
-    setMouseX(xPercent)
-    setMouseY(yPercent)
+    setMouseX(xPercent);
+    setMouseY(yPercent);
   }
 
   return (
@@ -75,13 +76,13 @@ const IndexPage = () => {
             width={6805}
             height={1080}
             quality={100}
-            formats={["auto", "webp", "avif"]}
           />
         </div>
         <div
           className="underlay"
           style={{
-            clipPath: `circle(${windowWidth * 0.1}px at ${mouseX}% ${mouseY}%)`,
+            WebkitMaskSize: `${circleSize}px ${circleSize}px`,
+            WebkitMaskPosition: `${mouseX}% ${mouseY}%`,
           }}
         >
           <StaticImage
@@ -92,7 +93,6 @@ const IndexPage = () => {
             width={6805}
             height={1080}
             quality={100}
-            formats={["auto", "webp", "avif"]}
           />
         </div>
       </div>
