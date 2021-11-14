@@ -1,6 +1,4 @@
-import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./slider.css";
 
@@ -59,7 +57,7 @@ const Slider = ({onChange}) => {
 
     return (
         <div id="slider" className="slider">
-            <div id="handle" className="handle-container" style={{transform: `translate(calc(${value}px - 50%), 50%)`}}>
+            <div id="handle" className="handle-container" style={{transform: `translate(calc(${value}px - 50%), -50%)`}}>
               <div className="handle" />
             </div>
         </div>

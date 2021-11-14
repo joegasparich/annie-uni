@@ -1,5 +1,6 @@
 import React, { MouseEventHandler, useLayoutEffect, useState } from "react";
 import { Helmet } from "react-helmet";
+import { isMobile } from "react-device-detect";
 
 import { useInView } from 'react-intersection-observer';
 import { StaticImage } from "gatsby-plugin-image";
@@ -49,52 +50,70 @@ const IndexPage = () => {
     setMouseY(yPercent);
   }
 
+  if (isMobile) {
+    return (
+      <div className="mobile">
+        <StaticImage
+          src="../images/logo.png"
+          alt="logo"
+          className="logo"
+          width={322}
+          height={ 440}
+        />
+        <p>This site is not suitable for mobile, please come back on a desktop.</p>
+      </div>
+    );
+  }
+
   return (
     <div className="page">
       <Helmet>
           <meta charSet="utf-8" />
           <title>Reality Check</title>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-          <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" /> */}
       </Helmet>
       <div className="logo" onClick={() => {aboutRef.current?.scrollIntoView({ behavior: "smooth" })}}>
         <StaticImage
           src="../images/logo.png"
           alt="logo"
-          width={233}
-          height={355}
+          width={322}
+          height={ 440}
         />
       </div>
-      <div className="images" onMouseMove={handleMouseMove} style={{transform: `translate(-${offset}px, 0)`}}>
-        <div className="overlay">
-          <StaticImage
-            src="../images/original.jpg"
-            alt="overlay"
-            className="image"
-            placeholder="blurred"
-            width={6805}
-            height={1080}
-            quality={100}
-          />
+      <div className="images-wrapper">
+        <div className="images" onMouseMove={handleMouseMove} style={{transform: `translate(-${offset}px, 0)`}}>
+          <div className="overlay">
+            <StaticImage
+              src="../images/original.jpg"
+              alt="overlay"
+              className="image"
+              placeholder="blurred"
+              width={6805}
+              height={1080}
+              quality={100}
+            />
+          </div>
+          <div
+            className="underlay"
+            style={{
+              WebkitMaskSize: `${circleSize}px ${circleSize}px`,
+              WebkitMaskPosition: `${mouseX}% ${mouseY}%`,
+            }}
+          >
+            <StaticImage
+              src="../images/hover.jpg"
+              alt="underlay"
+              className="image"
+              placeholder="blurred"
+              width={6805}
+              height={1080}
+              quality={100}
+            />
+          </div>
         </div>
-        <div
-          className="underlay"
-          style={{
-            WebkitMaskSize: `${circleSize}px ${circleSize}px`,
-            WebkitMaskPosition: `${mouseX}% ${mouseY}%`,
-          }}
-        >
-          <StaticImage
-            src="../images/hover.jpg"
-            alt="underlay"
-            className="image"
-            placeholder="blurred"
-            width={6805}
-            height={1080}
-            quality={100}
-          />
-        </div>
+        <div className="border" />
       </div>
       <Slider onChange={value => {
         const imageWidth = windowHeightRef.current  * 0.7 * 6.3;
@@ -104,7 +123,13 @@ const IndexPage = () => {
       } />
       <div ref={aboutRef} />
       <div className={`info ${inView ? 'fade-in' : ''}`} ref={inViewRef}>
-        <h3>about</h3>
+        <StaticImage
+          src="../images/about.png"
+          alt="about"
+          className="about"
+          width={290}
+          height={196}
+        />
         <div>
           <p>I don’t have that much to say about my own body image, I suppose it’s because I try so hard not to think about it - which is ironic because it truly does, and always has, consumed my life.</p>
           <p>I found it hard to love my body from a very young age. This may have been due to the warped perception I had of myself, or comparison to peers, or the times I received anonymous messages linking to a wikihow of how I could lose fat in my arms.</p>

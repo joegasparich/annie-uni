@@ -1,10 +1,30 @@
 body, h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Times New Roman', serif;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+}
+
+.mobile {
+    margin: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile .logo {
+    width: 25vw;
+    height: auto;
+    margin-bottom: 5vh;
 }
 
 .page {
     margin: 0 8vw;
-    padding-top: 10vh;
+    padding-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,21 +34,24 @@ body, h1, h2, h3 {
 .logo {
     width: 5vw;
     height: 7.5vw;
-    margin-bottom: 3vh;
     transform: translate(0, 0);
     transition: transform .2s ease;
     cursor: pointer;
 }
 
 .logo:hover {
-    transform: translate(0, -2vh);
+    transform: rotate(6deg);
+}
+
+.images-wrapper {
+    position: relative;
+    align-self: baseline;
+    margin-bottom: 2vh;
 }
 
 .images {
-    position:relative;
     width: calc(70vh * 6.3);
     height: 70vh;
-    align-self: baseline;
 }
 
 .overlay,
@@ -55,6 +78,18 @@ body, h1, h2, h3 {
     opacity: 1;
 }
 
+.border {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 101%;
+    height: 101%;
+    background-image: url(../images/border.png);
+    background-size: 84vw 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
 .info {
     margin: 14vh 17vw 18.5vh;
     opacity: 0;
@@ -67,10 +102,10 @@ body, h1, h2, h3 {
     transform: translate(0, 0);
 }
 
-h3 {
+.about {
     align-self: baseline;
     margin-bottom: 4vh;
-    font-size: 3.5vh;
+    width: 7.5vw;
 }
 
 p {
