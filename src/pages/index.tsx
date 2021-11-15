@@ -131,19 +131,21 @@ const IndexPage = () => {
           height={196}
         />
         <div>
-          <p>I don’t have that much to say about my own body image, I suppose it’s because I try so hard not to think about it - which is ironic because it truly does, and always has, consumed my life.</p>
-          <p>I found it hard to love my body from a very young age. This may have been due to the warped perception I had of myself, or comparison to peers, or the times I received anonymous messages linking to a wikihow of how I could lose fat in my arms.</p>
-          <p>I have this incredible ability to shake off any compliments I may have received throughout my life, and yet fixate on the smallest flaws or details of my skin, body and mind. </p>
-          <p>I went through a period of 5 or so weeks where I felt like this project was going nowhere. I didn’t know how to empower others, because in reality, I didn’t even know how to empower myself.</p>
-          <p>Selfishly I realised I had to pivot this project inwards. I had to be the one I was empowering, I couldn't convince anyone else to love their body when my own losing battle with self love made me feel like a fraud.</p>
-          <p>I fell in love with the collage art style because it made so much sense to me. The disjointed imagery felt similar to the way I view myself. Like parts of my body had been stuck on to create a whole but they didn’t really belong, my body didn’t make sense to me, and therefore it couldn’t have made sense to anyone else</p>
-          <p>This is my own personal experience with body dysmorphia, a disorder in which you can't stop fixating on one or more flaws in your appearance — a flaw that appears so minor it usually can't even be seen by others.</p>
-          <p>It took me a long time to figure out how to cope with the way I view myself. I’ve been in and out of therapy from a very young age, however like many others I’ve met, I was let down by New Zealand’s public mental health system. I realised I had to figure out how to love myself on my own, but I had no idea how. I felt so alone for the longest time, like no one understood what I was going through or how I felt. </p>
-          <p>When I was younger, I often felt belittled and invalidated by those I looked up to when I expressed my distaste for the way I looked. I’d often be met with comments like ‘you have nothing to complain about’ or ‘when you’re older you’ll feel differently’ - but if anything, with age it got progressively worse.</p>
-          <p>I tried everything I could to be someone else; painting my face with makeup everyday as if it were a mask. I couldn’t even leave to walk up the road to the supermarket at age 13 without putting layers on my face because I was so afraid of what people would think when they looked at me.</p>
-          <p>Early on in high school, I developed a compulsive skin picking disorder called dermatillomania; I now know with the help of my current therapist that this is inadvertently a way I delt with my self hatred, by fixating and trying to eradicate flaws that others couldn’t even see; however as expected, the damage I was doing to myself only made my self confidence worsen.</p>
-          <p>I even tried chest binders to manipulate the way my body looked, when I was still unhappy I began to develop issues with my eating habits, something very common in people struggling with their self image just like I was.</p>
-          <p>The only true solace I found was talking to others just like me, and understanding that the way one views themself often isn’t aligned with the way others may perceive them. That’s where the motivation for this project began.</p>
+          <p>The ‘90s feminist punk movement ’Riot Grrrl’ caused a wave of empowering mixed media posters and zines which tackled taboo topics such as abortion, patriarchy, sexual assault, and domestic abuse.</p>
+          <p>The impact our relationship with our bodies has on us is critical.<br />
+          We live in an age where we are constantly besieged with images of what ‘body perfection’ should be.</p>
+          <p>Social media, TV, and advertising are the culprit for curating the idealistic physical form, it’s important to give people a chance to contemplate different perspectives using multi-media art as the catalyst for conversation.</p>
+          <p>Research suggests that 86% of all women are dissatisfied with their bodies and want to lose weight. Both adult and adolescent women regard size as a definitive element of their identity. </p>
+          <p>There is a difference between the persona carried with oneself versus the internalised insecurities that rule over everyday life.</p>
+          <p>This project sheds light on a vulnerable personal experience; people rarely speak up regarding the hardships of learning to love themselves. <br/>
+          In a way, it seems almost shameful in the modern age to admit you're not perfect.</p>
+          <p>I wanted to show my relationship with body dysmorphia in the most accurate way possible by creating a long, online navigable art piece of two overlaying images; one being the side of myself that I show to others, and the other being my underlying silent struggle with body image. </p>
+          <p>This project aims at helping the target audience begin that journey by opening their mind to the reality that perception of self is not necessarily aligned with the perception of others.</p>
+          <p>The user can navigate through the website exhibition using a scroll bar, and interact with the design itself by hovering over the art piece to reveal the underlying image, the inner self and the insecurities society has bestowed upon us.</p>
+          <p>By sharing a personal journey with others, a bridge of empathy and understanding was formed with the target audience. </p>
+          <p>People need to know that they’re not alone, the inward battle many face with their self-image can feel so isolating, and this project serves as a reminder that self-love begins with yourself. </p>
+          <p>Although many strive for body positivity in their communities and peers, it can so often feel fraudulent when perceiving our own bodies. It’s normal. It’s what we’ve been conditioned to feel, and it’s something that has to be unlearned with time. </p>
+          <p>It's important to feel recognised and understood; whilst also bringing light to the difference between the perception of self, versus how others may view you.</p>
         </div>
       </div>
     </div>
