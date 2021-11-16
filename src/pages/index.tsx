@@ -135,16 +135,13 @@ const IndexPage = () => {
           <p>The impact our relationship with our bodies has on us is critical.<br />
           We live in an age where we are constantly besieged with images of what ‘body perfection’ should be.</p>
           <p>Social media, TV, and advertising are the culprit for curating the idealistic physical form, it’s important to give people a chance to contemplate different perspectives using multi-media art as the catalyst for conversation.</p>
-          <p>Research suggests that 86% of all women are dissatisfied with their bodies and want to lose weight. Both adult and adolescent women regard size as a definitive element of their identity. </p>
-          <p>There is a difference between the persona carried with oneself versus the internalised insecurities that rule over everyday life.</p>
-          <p>This project sheds light on a vulnerable personal experience; people rarely speak up regarding the hardships of learning to love themselves. <br/>
-          In a way, it seems almost shameful in the modern age to admit you're not perfect.</p>
-          <p>I wanted to show my relationship with body dysmorphia in the most accurate way possible by creating a long, online navigable art piece of two overlaying images; one being the side of myself that I show to others, and the other being my underlying silent struggle with body image. </p>
-          <p>This project aims at helping the target audience begin that journey by opening their mind to the reality that perception of self is not necessarily aligned with the perception of others.</p>
-          <p>The user can navigate through the website exhibition using a scroll bar, and interact with the design itself by hovering over the art piece to reveal the underlying image, the inner self and the insecurities society has bestowed upon us.</p>
-          <p>By sharing a personal journey with others, a bridge of empathy and understanding was formed with the target audience. </p>
-          <p>People need to know that they’re not alone, the inward battle many face with their self-image can feel so isolating, and this project serves as a reminder that self-love begins with yourself. </p>
-          <p>Although many strive for body positivity in their communities and peers, it can so often feel fraudulent when perceiving our own bodies. It’s normal. It’s what we’ve been conditioned to feel, and it’s something that has to be unlearned with time. </p>
+          <p>Research suggests that 86% of all women are dissatisfied with their bodies and want to lose weight. Both adult and adolescent women regard size as a definitive element of their identity.</p>
+          <p>There is a difference between the persona carried with oneself versus the internalised insecurities that rule over everyday life. This project sheds light on a vulnerable personal experience; people rarely speak up regarding the hardships of learning to love themselves. </p>
+          <p>In a way, it seems almost shameful in the modern age to admit you're not perfect. I wanted to show my relationship with body dysmorphia in the most accurate way possible by creating a long, online navigable art piece of two overlaying images; one being the side of myself that I show to others, and the other being my underlying silent struggle with body image.</p>
+          <p>This project aims at helping others begin that journey of body positivity by opening their mind to the reality that perception of self is not necessarily aligned with the perception of others.</p>
+          <p>You can navigate through the website exhibition using a scroll bar, and interact with the design itself by hovering over the art piece to reveal the underlying image, the inner self and the insecurities society has bestowed upon us.</p>
+          <p>People need to know that they’re not alone, the inward battle many face with their self-image can feel so isolating, and this project serves as a reminder that self-love begins with yourself.</p>
+          <p>Although many strive for body positivity in their communities and peers, it can so often feel fraudulent when perceiving our own bodies. It’s normal. It’s what we’ve been conditioned to feel, and it’s something that has to be unlearned with time.</p>
           <p>It's important to feel recognised and understood; whilst also bringing light to the difference between the perception of self, versus how others may view you.</p>
         </div>
       </div>
